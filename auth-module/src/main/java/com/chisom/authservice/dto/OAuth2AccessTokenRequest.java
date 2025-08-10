@@ -4,8 +4,8 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.google.gson.annotations.SerializedName;
 
 public record OAuth2AccessTokenRequest(
-        @SerializedName("grant_Type")
-        @JsonProperty("grant_Type")
+        @SerializedName("grant_type")
+        @JsonProperty("grant_type")
         String grantType,
         @SerializedName("client_id")
         @JsonProperty("client_id")

@@ -101,7 +101,7 @@ The application will be running on port 8083 by default.
 full request body for requesting OAuth2 access token
 ```json
 {
-  "grant_Type": "client_credentials",
+  "grant_type": "client_credentials",
   "client_id": "ARwdsvCGmeerDq9xeQg9MtGAnky4eHhL",
   "client_secret": "f1fLjcTMkh-WsRP0efBNpQGQB3191B-ihmmYTyOJnstESYGuE1CZuGN9OOFUvup",
   "audience": "https://standardization-service.com"
