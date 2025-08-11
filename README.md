@@ -88,7 +88,7 @@ commons, auth-module, standardization-application.
 mvn spring-boot:run -pl standardization-application
 ```
 
-The application will be running on port 8083 by default.
+The application will be running on port 8083.
 
 ## API Endpoints
 
@@ -99,7 +99,7 @@ The application will be running on port 8083 by default.
     - client_id: ARwdsvCGmeerDq9xeQg9MtGAnky4eHhL
     - client_secret: f1fLjcTMkh-WsRP0efBNpQGQB3191B-ihmmYTyOJnstESYGuE1CZuGN9OOFUvup
 
-full request body for requesting OAuth2 access token
+Generate an access token using the below:
 
 ```json
 {
@@ -112,12 +112,18 @@ full request body for requesting OAuth2 access token
 
 ### Provider Alpha Integration
 
+Add the access token to the **Authorization** header of the request:
+**Bearer <access-token>**
+
 - **POST /provider-alpha/feed**: Ingest data from Provider Alpha
     - Consumes: `application/json`
     - Request body: AlphaMsg
     - Response: 200 OK on success
 
 ### Provider Beta Integration
+
+Add the access token to the **Authorization** header of the request:
+**Bearer <access-token>**
 
 - **POST /provider-beta/feed**: Ingest data from Provider Beta
     - Consumes: `application/json`
