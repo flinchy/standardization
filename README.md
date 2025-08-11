@@ -112,8 +112,7 @@ Generate an access token using the below:
 
 ### Provider Alpha Integration
 
-Add the access token to the **Authorization** header of the request:
-**Bearer <access-token>**
+Add the access token to the **Authorization** header of the request: Bearer <access-token>
 
 - **POST /provider-alpha/feed**: Ingest data from Provider Alpha
     - Consumes: `application/json`
@@ -122,8 +121,7 @@ Add the access token to the **Authorization** header of the request:
 
 ### Provider Beta Integration
 
-Add the access token to the **Authorization** header of the request:
-**Bearer <access-token>**
+Add the access token to the **Authorization** header of the request: Bearer <access-token>
 
 - **POST /provider-beta/feed**: Ingest data from Provider Beta
     - Consumes: `application/json`
