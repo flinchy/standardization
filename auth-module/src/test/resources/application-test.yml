@@ -1,0 +1,21 @@
+security:
+  aes-key: |
+    {
+      "primaryKeyId": 1539655151,
+      "key": [
+        {
+          "keyData": {
+            "typeUrl": "type.googleapis.com/google.crypto.tink.AesGcmKey",
+            "value": "GiCRTrYRClzNggHbknQGlZxlStAfVRwmWe38wqzIYGWBvw==",
+            "keyMaterialType": "SYMMETRIC"
+          },
+          "status": "ENABLED",
+          "keyId": 1539655151,
+          "outputPrefixType": "TINK"
+        }
+      ]
+    }
+  client-id: ARwdsvCGmeerDq9xeQg9MtGAnky4eHhL
+  client-secret: f1fLjcTMkh-WsRP0efBNpQGQB3191B-ihmmYTyOJnstESYGuE1CZuGN9OOFUvup
+  key-id: 1616ba34ba802ef460d8727a3a77bd566470346b1a3af35d0d82b8572342be45
+  secret: AVvFRe8GVPqo90Rcugm4qtudPoJM3+jUBz/9Hrx99c3LqKYt6um/Y72b3eRztdD4x7RVBigAuXLh31TdwMVvSQDWMcZ5
