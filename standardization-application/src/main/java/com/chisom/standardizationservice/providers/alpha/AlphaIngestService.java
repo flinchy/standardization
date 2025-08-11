@@ -16,6 +16,6 @@ public class AlphaIngestService implements AlphaIngestUseCase {
     @Override
     public void ingest(AlphaMsg msg) {
         MessageType type = adapter.type(msg);
-        activity.useAdapter(adapter).ingest(type, msg);
+        activity.ingest(adapter, type, msg);
     }
 }

@@ -16,6 +16,6 @@ public class BetaIngestService implements BetaIngestUseCase {
     @Override
     public void ingest(BetaMsg msg) {
         MessageType type = adapter.type(msg);
-        activity.useAdapter(adapter).ingest(type, msg);
+        activity.ingest(adapter, type, msg);
     }
 }
