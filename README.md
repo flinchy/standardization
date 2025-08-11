@@ -9,13 +9,14 @@ The Standardization Service consists of three main modules:
 
 ### 1. Commons Module
 
-Contains shared utilities, common dependencies, and helper classes used across the service. This currently 
+Contains shared utilities, common dependencies, and helper classes used across the service. This currently
 contains only the encryption utilities
 
 ### 2. Auth Module
 
-Provides OAuth2 token generation for **machine to machine** communication. This module generates an OAuth2 access token that 
-can be used to authenticate requests to the Standardization Service.
+Usually this would be a third party client (Auth0, Okta, etc.) that generates access tokens for **Machine to Machine**
+communications.
+This service is mocking that functionality for testing purposes.
 
 ### 3. Standardization Application
 
@@ -97,8 +98,9 @@ The application will be running on port 8083 by default.
     - Consumes: `application/json`
     - client_id: ARwdsvCGmeerDq9xeQg9MtGAnky4eHhL
     - client_secret: f1fLjcTMkh-WsRP0efBNpQGQB3191B-ihmmYTyOJnstESYGuE1CZuGN9OOFUvup
-      
+
 full request body for requesting OAuth2 access token
+
 ```json
 {
   "grant_type": "client_credentials",
